@@ -35,6 +35,7 @@
                 <button id="play-button">Play</button>
                 <button id="next-button">Next</button>
             </div>
+        </section>
 
             <section id="song-info" class="song-info">
                 <h2 id="song-title">Song Title</h2>
@@ -53,16 +54,19 @@
         <ul id="song-list"></ul>
         <section>
 
+        <section id="add-songs-form" class="add-songs-form">
             <h3>Add new songs</h3>
             <form>
-                <input type="text" placeholder="Song name">
-                <input type="text" placeholder="Artist">
-                <input type="text" placeholder="Image URL">
-                <input type="text" placeholder="Audio URL">
+                <input type="text"  id="new-song-name" placeholder="Song name">
+                <input type="text" id="new-song-artist" placeholder="Artist">
+                <input type="text" id="new-song-image" placeholder="Image URL">
+                <input type="text" id="new-song-audio" placeholder="Audio URL">
                 
-                <button type="submit" >Add song</button>
+                <button type="submit" id="add-new-song-button">Add song</button>
             </form>
         </section>
+        
     </main>
+
 </body>
 </html>
