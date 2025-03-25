@@ -8,11 +8,11 @@
 <body>
     <main>
         <header>
-            <a href="#">
-                <h1>ELEV-8</h1>
+            <a href="#" class="logo">
+                <h1 class="title">ELEV-8</h1>
             </a>
                 <nav>
-                    <a href="#">Home</a>
+                    <a href="#" class="active">Home</a>
                     <a href="#">About</a>
                     <a href="#">Songs</a>
                     <a href="#">Genre</a>
@@ -21,18 +21,19 @@
 
         </header>
 
-        <section>
+        <section class="intro">
             <h3>Welcome to Elev-8</h3>
             <h2>Listen, create, share</h2>
-            <a href="#player">Start Listening</a>
+            <a href="#player" class="call-toa-action">Start Listening</a>
         </section>
 
-        <section>
-            <img src="" alt="Song image">
-            <div>
-                <button>Previous</button>
-                <button>Play</button>
-                <button>Next</button>
+        <section id="player" class="music-play-section">
+            <img id="image" src="" alt="Song image">
+            <audio id="audio-player" controls></audio>
+            <div class="controls">
+                <button id="previous-button">Previous</button>
+                <button id="play-button">Play</button>
+                <button id="next-button">Next</button>
             </div>
         </section>
 
