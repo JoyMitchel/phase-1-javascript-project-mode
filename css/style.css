@@ -153,4 +153,9 @@ input[type="number"] {
     font-size: 1rem;
 }
 
+button#rate-button, button#like-button {
+    margin-top: 10px;
+}
+
+
 
