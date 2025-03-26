@@ -53,7 +53,11 @@ nav a {
 }
 
 nav a.active {
-    color: #f39c12;
+    color:  #3b82f6;
+}
+
+nav a:hover {
+    background-color: black
 }
 
 .intro {
@@ -157,5 +161,7 @@ button#rate-button, button#like-button {
     margin-top: 10px;
 }
 
-
+#like-button {
+    background-color: #032050;
+}
 
