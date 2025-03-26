@@ -31,3 +31,10 @@ body {
     line-height: 1.6;
 }
 
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    font-family: var(--header-font);
+}
+
