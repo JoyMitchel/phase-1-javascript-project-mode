@@ -123,4 +123,11 @@ button:hover {
     background-color:  #2563eb;
 }
 
+.song-info {
+    text-align: center;
+    background-color: #e3f2fd;
+    padding: 20px;
+    margin: 20px 0;
+}
+
 
