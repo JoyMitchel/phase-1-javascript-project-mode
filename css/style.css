@@ -26,7 +26,7 @@ body {
 }
 
 body {
-    background-color:  #eaf2f8;
+    background-color: #f0f4f8;
     color: #333;
     line-height: 1.6;
 }
@@ -60,7 +60,7 @@ nav a.active {
     text-align: center;
     margin: 40px 0;
     padding: 20px;
-    background-color: #3498db;
+    background-color:  #3b82f6;
     color: #131212;
 }
 
@@ -81,3 +81,8 @@ nav a.active {
    border-radius: 5px;
    font-weight: bold;
 }
+
+.call-to-action:hover {
+    background-color: #131212; 
+}
+
