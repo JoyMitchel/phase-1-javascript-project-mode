@@ -6,6 +6,18 @@
     --header-font: font-family: "Montserrat", sans-serif;
 }
 
+h1, h2 {
+    font-family: var(--header-font);
+}
+
+.title {
+    font-family: var(--title-font);
+}
+
+body {
+    font-family: var(--body-font);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,3 +25,6 @@
     font-family: var(--body-font);
 }
 
+body {
+
+}
