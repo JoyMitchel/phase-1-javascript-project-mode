@@ -108,3 +108,15 @@ audio {
 .controls {
     margin-top: 20px;
 }
+
+button {
+    background-color: #032050;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
