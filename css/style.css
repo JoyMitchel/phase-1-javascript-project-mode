@@ -68,3 +68,9 @@ nav a.active {
     font-size: 16px;
 }
 
+.intro h2 {
+    font-size: 40px;
+    margin: 10px 0;
+    font-family: var(--title-font);
+}
+
