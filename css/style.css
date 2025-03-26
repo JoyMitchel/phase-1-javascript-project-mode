@@ -102,5 +102,9 @@ audio {
     width: 100%;
     max-width: 600px;
     margin: 10px 0;
-    
+
+}
+
+.controls {
+    margin-top: 20px;
 }
