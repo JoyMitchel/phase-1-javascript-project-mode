@@ -52,3 +52,6 @@ nav a {
     font-family: var(--body-font);
 }
 
+nav a.active {
+    color: #f39c12;
+}
