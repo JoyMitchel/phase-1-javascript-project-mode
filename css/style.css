@@ -38,3 +38,8 @@ header {
     font-family: var(--header-font);
 }
 
+.logo h1 {
+    color: #fff;
+    font-size: 32px;
+    font-family: var(--title-font);
+}
