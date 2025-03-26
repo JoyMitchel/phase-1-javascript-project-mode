@@ -146,4 +146,11 @@ button:hover {
     margin-bottom: 20px;
 }
 
+input[type="number"] {
+    padding: 10px;
+    margin-right: 10px;
+    width: 60px;
+    font-size: 1rem;
+}
+
 
