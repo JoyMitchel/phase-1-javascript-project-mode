@@ -26,13 +26,13 @@ body {
 }
 
 body {
-    background-color: #f4f4f9;
+    background-color:  #eaf2f8;
     color: #333;
     line-height: 1.6;
 }
 
 header {
-    background-color: #333;
+    background-color: #070c4b;
     padding: 20px;
     text-align: center;
     font-family: var(--header-font);
@@ -43,3 +43,12 @@ header {
     font-size: 32px;
     font-family: var(--title-font);
 }
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--body-font);
+}
+
