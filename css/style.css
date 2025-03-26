@@ -90,3 +90,10 @@ nav a.active {
     text-align: center;
     margin: 40px 0;
 }
+
+
+#image {
+    max-width: 200px;
+    height: auto;
+    margin: 20px 0;
+}
