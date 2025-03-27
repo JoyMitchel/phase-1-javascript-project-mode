@@ -2,31 +2,31 @@
     "songs": [
       {
         "id": 1,
-        "title": "Shape of You",
-        "artist": "Ed Sheeran",
-        "image": "https://link-to-image.com/shape-of-you.jpg",
-        "audio": "https://link-to-audio.com/shape-of-you.mp3"
+        "title": "Bank on it",
+        "artist": "Burna Boy",
+        "image": "",
+        "audio": "https://open.spotify.com/track/59r8MRjv8K2rx8W3jQ5HW2?si=9af9df5a6d3944b5"
       },
       {
         "id": 2,
-        "title": "Blinding Lights",
-        "artist": "The Weeknd",
-        "image": "https://link-to-image.com/blinding-lights.jpg",
-        "audio": "https://link-to-audio.com/blinding-lights.mp3"
+        "title": "Nyamama",
+        "artist": "Watendawili, Okello Max",
+        "image": "https://i.scdn.co/image/ab67616d0000b27399b3cba151dcdd262cfb2bcf",
+        "audio": "https://open.spotify.com/track/5jDRtFyST8rJx5j2pOhqVX?si=0bf17febefad4d82"
       },
       {
         "id": 3,
-        "title": "Levitating",
-        "artist": "Dua Lipa",
-        "image": "https://link-to-image.com/levitating.jpg",
-        "audio": "https://link-to-audio.com/levitating.mp3"
+        "title": "United in Grief",
+        "artist": "Kendrick Lamar",
+        "image": "https://i.scdn.co/image/ab67616d0000b2732e02117d76426a08ac7c174f",
+        "audio": "https://open.spotify.com/track/5Gt9bxniM1SxN61yRzRhXL?si=0b025fea39904083"
       },
       {
         "id": 4,
-        "title": "Stay",
-        "artist": "The Kid LAROI & Justin Bieber",
-        "image": "https://link-to-image.com/stay.jpg",
-        "audio": "https://link-to-audio.com/stay.mp3"
+        "title": "Marvin's Room",
+        "artist": "Drake",
+        "image": "https://i.scdn.co/image/ab67616d0000b273c7ea04a9b455e3f68ef82550",
+        "audio": "https://open.spotify.com/track/047fCsbO4NdmwCBn8pcUXl?si=c1eeb4bfd3354acc"
       }
     ]
   }
