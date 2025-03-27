@@ -12,6 +12,11 @@ h1, h2 {
 
 .title {
     font-family: var(--title-font);
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 body {
@@ -57,7 +62,7 @@ nav a.active {
 }
 
 nav a:hover {
-    background-color: black
+   color: #3b82f6;
 }
 
 .intro {

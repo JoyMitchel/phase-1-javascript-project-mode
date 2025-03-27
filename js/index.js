@@ -7,14 +7,25 @@ document.addEventListener("DOMContentLoaded", () => {
         fetch(baseUrl)
             .then(response => response.json())
             .then(data => {
-                songListUl.innerHTML = '';
+                songListUl.innerHTML = ''; 
                 data.forEach(song => {
                     const songItem = document.createElement("li");
-                    songItem.innerHTML = `
-                        <h4>${song.title} - ${song.artist}</h4>
-                        <img src="assets/images/${song.image}" alt="${song.title}">
-                        <button class="delete-btn" data-id="${song.id}">Delete</button>
-                    `;
+
+                    const songTitle = document.createElement("h4");
+                    songTitle.textContent = `${song.title} - ${song.artist}`;
+                    songItem.appendChild(songTitle);
+
+                    const songImage = document.createElement("img");
+                    songImage.src = `assets/images/${song.image}`;
+                    songImage.alt = song.title;
+                    songItem.appendChild(songImage);
+
+                    const deleteButton = document.createElement("button");
+                    deleteButton.classList.add("delete-btn");
+                    deleteButton.textContent = "Delete";
+                    deleteButton.dataset.id = song.id;
+                    songItem.appendChild(deleteButton);
+
                     songListUl.appendChild(songItem);
                 });
 
@@ -63,5 +74,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     fetchSongs();
 });
+
 
 
