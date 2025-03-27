@@ -1,33 +1,33 @@
 {
+  {
     "songs": [
       {
         "id": 1,
         "title": "Bank on it",
         "artist": "Burna Boy",
-        "image": "https://i.scdn.co/image/ab67616d0000b2735b069390c128a4b4c3197d80",
-        "audio": "https://open.spotify.com/track/59r8MRjv8K2rx8W3jQ5HW2?si=9af9df5a6d3944b5"
+        "image": "bank_on_it.jpg"
       },
       {
         "id": 2,
         "title": "Nyamama",
         "artist": "Watendawili, Okello Max",
-        "image": "https://i.scdn.co/image/ab67616d0000b27399b3cba151dcdd262cfb2bcf",
-        "audio": "https://open.spotify.com/track/5jDRtFyST8rJx5j2pOhqVX?si=0bf17febefad4d82"
+        "image": "nyamama.jpg"
       },
       {
         "id": 3,
         "title": "United in Grief",
         "artist": "Kendrick Lamar",
-        "image": "https://i.scdn.co/image/ab67616d0000b2732e02117d76426a08ac7c174f",
-        "audio": "https://open.spotify.com/track/5Gt9bxniM1SxN61yRzRhXL?si=0b025fea39904083"
+        "image": "united_in_grief.jpg"
       },
       {
         "id": 4,
         "title": "Marvin's Room",
         "artist": "Drake",
-        "image": "https://i.scdn.co/image/ab67616d0000b273c7ea04a9b455e3f68ef82550",
-        "audio": "https://open.spotify.com/track/047fCsbO4NdmwCBn8pcUXl?si=c1eeb4bfd3354acc"
+        "image": "marvins_room.jpg"
       }
     ]
   }
+  
+
+
   

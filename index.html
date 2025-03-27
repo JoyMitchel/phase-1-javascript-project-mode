@@ -12,58 +12,45 @@
             <a href="#" class="logo">
                 <h1 class="title">ELEV-8</h1>
             </a>
-                <nav>
-                    <a href="#" class="active">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Songs</a>
-                    <a href="#">Genre</a>
-                    <a href="#">Contact</a>
-                </nav>
+            <nav>
+                <a href="#" class="active">Home</a>
+                <a href="#">About</a>
+                <a href="#">Songs</a>
+                <a href="#">Genre</a>
+                <a href="#">Contact</a>
+            </nav>
         </header>
 
         <section class="intro">
             <h3>Welcome to Elev-8</h3>
             <h2>Listen, create, share</h2>
-            <a href="#player" class="call-to-action">Start Listening</a>
-        </section>
-
-        <section id="player" class="music-play-section">
-            <img id="image" src="" alt="Song image">
-            <audio id="audio-player" controls></audio>
-            <div class="controls">
-                <button id="previous-button">Previous</button>
-                <button id="play-button">Play</button>
-                <button id="next-button">Next</button>
-            </div>
+            <a href="#song-list" class="call-to-action">Start Browsing Songs</a>
         </section>
 
         <section id="song-info" class="song-info">
             <h2 id="song-title">Song Title</h2>
             <p id="artist">Artist</p>
-            <p id="votes">Votes: <span id="votes-count">0</span></p>
-            <div>
-                <input type="number" id="ratings-input">
-                <button id="rate-button">Rate</button>
-                <button id="like-button">Like</button>
+            <div id="song-image">
+                <img id="image" src="assets/images/bank_on_it.jpg" alt="Song Image">
             </div>
         </section>
 
-        <input type="text" placeholder="Search...">
+        <input type="text" placeholder="Search..." id="song-search">
         <ul id="song-list"></ul>
 
         <section id="add-songs-form" class="add-songs-form">
-            <h3>Add new songs</h3>
+            <h3>Add New Songs</h3>
             <form id="add-song-form">
                 <input type="text" id="new-song-title" placeholder="Song Title" required>
                 <input type="text" id="new-song-artist" placeholder="Artist" required>
                 <input type="file" id="new-song-image" accept="image/*" required>
-                <input type="file" id="new-song-audio" accept="audio/*" required>
-                <button type="submit" id="add-new-song-button">Add song</button>
+                <button type="submit" id="add-new-song-button">Add Song</button>
             </form>
         </section>
-        
     </main>
 
     <script src="js/script.js"></script>
 </body>
 </html>
+
+
