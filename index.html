@@ -19,7 +19,6 @@
                     <a href="#">Genre</a>
                     <a href="#">Contact</a>
                 </nav>
-
         </header>
 
         <section class="intro">
@@ -38,30 +37,27 @@
             </div>
         </section>
 
-            <section id="song-info" class="song-info">
-                <h2 id="song-title">Song Title</h2>
-                <p id="artist">Artist</p>
-                <p id="votes">Votes: <span id="votes-count">0</span></p>
-                <div>
-                    <input type="number" id="ratings-input">
-                    <button id="rate-button">Rate</button>
-                    <button id="like-button">Like</button>
-                </div>
-            </section>
-
-
+        <section id="song-info" class="song-info">
+            <h2 id="song-title">Song Title</h2>
+            <p id="artist">Artist</p>
+            <p id="votes">Votes: <span id="votes-count">0</span></p>
+            <div>
+                <input type="number" id="ratings-input">
+                <button id="rate-button">Rate</button>
+                <button id="like-button">Like</button>
+            </div>
         </section>
+
         <input type="text" placeholder="Search...">
         <ul id="song-list"></ul>
-        <section>
 
         <section id="add-songs-form" class="add-songs-form">
             <h3>Add new songs</h3>
-            <form>
-                <input type="text"  id="new-song-name" placeholder="Song name">
+            <form id="add-song-form">
+                <input type="text" id="new-song-title" placeholder="Song Title">
                 <input type="text" id="new-song-artist" placeholder="Artist">
-                <input type="text" id="new-song-image" placeholder="Image URL">
-                <input type="text" id="new-song-audio" placeholder="Audio URL">
+                <input type="file" id="new-song-image" placeholder="Choose Image">
+                <input type="file" id="new-song-audio" placeholder="Choose Audio">
                 
                 <button type="submit" id="add-new-song-button">Add song</button>
             </form>
@@ -69,5 +65,6 @@
         
     </main>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
