@@ -1,13 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const apiUrl = "http://localhost:3000/songs";
-
+    const baseUrl = "http://localhost:3000/songs";
     const songListUl = document.getElementById("songs-list-ul");
     const audioPlayer = document.getElementById("audio-player");
     const songTitle = document.getElementById("song-title");
     const songArtist = document.getElementById("song-artist");
     const playerImage = document.getElementById("player-image");
     const addSongForm = document.getElementById("add-song");
-
 
     function fetchSongs() {
         fetch(baseUrl)
@@ -28,11 +26,31 @@ document.addEventListener("DOMContentLoaded", () => {
                     button.addEventListener('click', playSong);
                 });
 
-                document.querySelectorAll('.play-btn').forEach(button => {
-                    button.addEventListener('click', playSong);
-                });
-
                 document.querySelectorAll('.delete-btn').forEach(button => {
                     button.addEventListener('click', deleteSong);
                 });
             })
+            .catch(err => console.error("Error fetching songs: ", err));
+    }
+
+
+    addSongForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const newSong = {
+            title: document.getElementById("new-song-title").value,
+            artist: document.getElementById("new-song-artist").value,
+            image: document.getElementById("new-song-image").value,
+            audio: document.getElementById("new-song-audio").value
+        };
+
+        fetch(baseUrl, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(newSong)
+        })
+            .then(response => response.json())
+            .then(() => fetchSongs())
+            .catch(err => console.error("Error adding song: ", err));
+    });
