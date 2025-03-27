@@ -68,3 +68,12 @@ document.addEventListener("DOMContentLoaded", () => {
             })
             .catch(err => console.error("Error playing song: ", err));
     }
+
+    function deleteSong(e) {
+        const songId = e.target.dataset.id;
+        fetch(`${baseUrl}/${songId}`, {
+            method: "DELETE"
+        })
+            .then(() => fetchSongs())
+            .catch(err => console.error("Error deleting song: ", err));
+    }
