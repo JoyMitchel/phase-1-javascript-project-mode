@@ -218,3 +218,8 @@ button#rate-button, button#like-button {
     font-weight: bold;
     margin-top: 10px;
 }
+
+#add-new-song-button:hover {
+    background-color: #2563eb;
+}
+
