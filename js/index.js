@@ -54,3 +54,17 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(() => fetchSongs())
             .catch(err => console.error("Error adding song: ", err));
     });
+
+    function playSong(e) {
+        const songId = e.target.dataset.id;
+        fetch(`${baseUrl}/${songId}`)
+            .then(response => response.json())
+            .then(song => {
+                audioPlayer.src = song.audio;
+                audioPlayer.play();
+                songTitle.textContent = song.title;
+                songArtist.textContent = song.artist;
+                playerImage.src = song.image;
+            })
+            .catch(err => console.error("Error playing song: ", err));
+    }
