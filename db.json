@@ -5,7 +5,7 @@
         "id": 1,
         "title": "Bank on it",
         "artist": "Burna Boy",
-        "image": "bank_on_it.jpg"
+        "image": "assets/images/bank_on_it.jpg"
       },
       {
         "id": 2,
@@ -30,7 +30,7 @@
         "id": 4,
         "title": "",
         "artist":"" ,
-        "image": "",
+        "image": ""
       }
     ]
   }

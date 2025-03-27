@@ -46,13 +46,14 @@ header {
 .logo {
     display: flex;
     justify-content: center;
-    
+
 }
 
 .logo h1 {
     color: #fff;
     font-size: 32px;
     font-family: var(--title-font);
+    margin: 0 30px;
 }
 
 .logo img {
