@@ -38,19 +38,20 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     addSongForm.addEventListener("submit", (sub) => {
-        sub.preventDefault();
+        
 
-    
+        const songTitle = document.getElementById("new-song-title").value;
+        const songArtist = document.getElementById("new-song-artist").value;
         const imageFile = document.getElementById("new-song-image").files[0];
 
-        if (!imageFile) {
-            alert("Please select an image file.");
+        if (!songTitle || !songArtist || !imageFile) {
+            alert("Please provide the song title, artist, and image.");
             return;
         }
 
         const newSong = {
-            title: document.getElementById("new-song-title").value,
-            artist: document.getElementById("new-song-artist").value,
+            title: songTitle,
+            artist: songArtist,
             image: imageFile.name,
         };
 

@@ -1,39 +1,31 @@
-
-  {
-    "songs": [
-      {
-        "id": 1,
-        "title": "Bank on it",
-        "artist": "Burna Boy",
-        "image": "assets/images/bank_on_it.jpg"
-      },
-      {
-        "id": 2,
-        "title": "Nyamama",
-        "artist": "Watendawili, Okello Max",
-        "image": "nyamama.jpg"
-      },
-      {
-        "id": 3,
-        "title": "United in Grief",
-        "artist": "Kendrick Lamar",
-        "image": "united_in_grief.jpg"
-      },
-      {
-        "id": 4,
-        "title": "Marvin's Room",
-        "artist": "Drake",
-        "image": "marvins_room.jpg"
-      },
-      {
-        "id": 4,
-        "title": "",
-        "artist":"" ,
-        "image": ""
-      }
-    ]
-  }
-  
-
-
-  
+{
+  "songs": [
+    {
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "title": "Nyamama",
+      "artist": "Watendawili, Okello Max",
+      "image": "nyamama.jpg"
+    },
+    {
+      "id": "3",
+      "title": "United in Grief",
+      "artist": "Kendrick Lamar",
+      "image": "united_in_grief.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Marvin's Room",
+      "artist": "Drake",
+      "image": "marvins_room.jpg"
+    },
+    {
+      "id": "4",
+      "title": "",
+      "artist": "",
+      "image": ""
+    }
+  ]
+}
