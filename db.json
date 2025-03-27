@@ -7,3 +7,27 @@
         "image": "https://link-to-image.com/shape-of-you.jpg",
         "audio": "https://link-to-audio.com/shape-of-you.mp3"
       },
+      {
+        "id": 2,
+        "title": "Blinding Lights",
+        "artist": "The Weeknd",
+        "image": "https://link-to-image.com/blinding-lights.jpg",
+        "audio": "https://link-to-audio.com/blinding-lights.mp3"
+      },
+      {
+        "id": 3,
+        "title": "Levitating",
+        "artist": "Dua Lipa",
+        "image": "https://link-to-image.com/levitating.jpg",
+        "audio": "https://link-to-audio.com/levitating.mp3"
+      },
+      {
+        "id": 4,
+        "title": "Stay",
+        "artist": "The Kid LAROI & Justin Bieber",
+        "image": "https://link-to-image.com/stay.jpg",
+        "audio": "https://link-to-audio.com/stay.mp3"
+      }
+    ]
+  }
+  
