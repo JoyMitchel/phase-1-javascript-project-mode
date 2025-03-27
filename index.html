@@ -54,11 +54,10 @@
         <section id="add-songs-form" class="add-songs-form">
             <h3>Add new songs</h3>
             <form id="add-song-form">
-                <input type="text" id="new-song-title" placeholder="Song Title">
-                <input type="text" id="new-song-artist" placeholder="Artist">
-                <input type="file" id="new-song-image" placeholder="Choose Image">
-                <input type="file" id="new-song-audio" placeholder="Choose Audio">
-                
+                <input type="text" id="new-song-title" placeholder="Song Title" required>
+                <input type="text" id="new-song-artist" placeholder="Artist" required>
+                <input type="file" id="new-song-image" accept="image/*" required>
+                <input type="file" id="new-song-audio" accept="audio/*" required>
                 <button type="submit" id="add-new-song-button">Add song</button>
             </form>
         </section>
