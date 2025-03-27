@@ -36,8 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
             .catch(err => console.error("Error fetching songs: ", err));
     }
 
-    addSongForm.addEventListener("submit", (e) => {
-        e.preventDefault();
+    addSongForm.addEventListener("submit", (sub) => {
+        sub.preventDefault();
         const imageFile = document.getElementById("new-song-image").files[0];
 
         if (!imageFile) {
@@ -63,8 +63,8 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(err => console.error("Error adding song: ", err));
     });
 
-    function deleteSong(e) {
-        const songId = e.target.dataset.id;
+    function deleteSong(sub) {
+        const songId = sub.target.dataset.id;
         fetch(`${baseUrl}/${songId}`, {
             method: "DELETE"
         })
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(err => console.error("Error deleting song: ", err));
     }
 
-    fetchSongs();
+    document.addEventListener("DOMContentLoaded" , fetchSongs)
 });
 
 
