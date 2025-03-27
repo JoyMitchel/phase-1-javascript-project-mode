@@ -154,7 +154,7 @@ input[type="number"] {
     padding: 10px;
     margin-right: 10px;
     width: 60px;
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 button#rate-button, button#like-button {
@@ -165,3 +165,8 @@ button#rate-button, button#like-button {
     background-color: #032050;
 }
 
+#song-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
