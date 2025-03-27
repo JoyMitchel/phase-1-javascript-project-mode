@@ -1,0 +1,9 @@
+{
+    "songs": [
+      {
+        "id": 1,
+        "title": "Shape of You",
+        "artist": "Ed Sheeran",
+        "image": "https://link-to-image.com/shape-of-you.jpg",
+        "audio": "https://link-to-audio.com/shape-of-you.mp3"
+      },
