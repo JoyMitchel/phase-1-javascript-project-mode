@@ -36,11 +36,15 @@ document.addEventListener("DOMContentLoaded", () => {
             .catch(err => console.error("Error fetching songs: ", err));
     }
 
-    addSongForm.addEventListener("submit", (submit) => {
-        submit.preventDefault();
+    addSongForm.addEventListener("submit", (e) => {
+        e.preventDefault();
         const imageFile = document.getElementById("new-song-image").files[0];
 
-        
+        if (!imageFile) {
+            alert("Please select an image file.");
+            return;
+        }
+
         const newSong = {
             title: document.getElementById("new-song-title").value,
             artist: document.getElementById("new-song-artist").value,
@@ -59,8 +63,8 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(err => console.error("Error adding song: ", err));
     });
 
-    function deleteSong(submit) {
-        const songId = submit.target.dataset.id;
+    function deleteSong(e) {
+        const songId = e.target.dataset.id;
         fetch(`${baseUrl}/${songId}`, {
             method: "DELETE"
         })
