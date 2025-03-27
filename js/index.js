@@ -77,3 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(() => fetchSongs())
             .catch(err => console.error("Error deleting song: ", err));
     }
+
+    fetchSongs();
+});
