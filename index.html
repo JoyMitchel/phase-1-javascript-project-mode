@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ELEV-8</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/index.js"></script>
+    <script src="js/index.js" defer></script>
 </head>
 <body>
     <main>
@@ -26,7 +26,12 @@
         <section class="intro">
             <h3>Welcome to Elev-8</h3>
             <h2>Listen, create, share</h2>
-            <a href="#song-list" class="call-to-action">Browse Songs</a>
+            <a href="#song-list-section" class="call-to-action">Browse Songs</a>
+        </section>
+
+        <section id="song-list-section" class="call-to-action">
+            <h2>Songs</h2>
+            <ul id="song-list"></ul>
         </section>
 
         <section id="song-info" class="song-info">
@@ -48,6 +53,10 @@
         </section>
     </main>
 </body>
+
+<footer>
+    <p>&copy; 2025 ELEV-8. All Right Reserved.</p>
+</footer>
 </html>
 
 

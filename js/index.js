@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .then(response => response.json())
             .then(data => {
                 songListUl.innerHTML = ''; 
+
                 data.forEach(song => {
                     const songItem = document.createElement("li");
 
@@ -38,6 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     addSongForm.addEventListener("submit", (sub) => {
         sub.preventDefault();
+
+    
         const imageFile = document.getElementById("new-song-image").files[0];
 
         if (!imageFile) {
@@ -72,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(err => console.error("Error deleting song: ", err));
     }
 
-    document.addEventListener("DOMContentLoaded" , fetchSongs)
+    fetchSongs();
 });
 
 
