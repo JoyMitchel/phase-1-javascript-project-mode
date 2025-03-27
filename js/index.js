@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const baseUrl = "http://localhost:3000/songs";
+    const baseUrl = "https://phase-1-javascript-project-mode-green.vercel.app/";
     const songListUl = document.getElementById("song-list");
     const addSongForm = document.getElementById("add-song-form");
 
@@ -36,15 +36,11 @@ document.addEventListener("DOMContentLoaded", () => {
             .catch(err => console.error("Error fetching songs: ", err));
     }
 
-    addSongForm.addEventListener("submit", (e) => {
-        e.preventDefault();
+    addSongForm.addEventListener("submit", (submit) => {
+        submit.preventDefault();
         const imageFile = document.getElementById("new-song-image").files[0];
 
-        if (!imageFile) {
-            alert("Please select an image file.");
-            return;
-        }
-
+        
         const newSong = {
             title: document.getElementById("new-song-title").value,
             artist: document.getElementById("new-song-artist").value,
@@ -63,8 +59,8 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(err => console.error("Error adding song: ", err));
     });
 
-    function deleteSong(e) {
-        const songId = e.target.dataset.id;
+    function deleteSong(submit) {
+        const songId = submit.target.dataset.id;
         fetch(`${baseUrl}/${songId}`, {
             method: "DELETE"
         })

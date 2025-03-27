@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ELEV-8</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/index.js"></script>
 </head>
 <body>
     <main>
         <header>
             <a href="#" class="logo">
                 <h1 class="title">ELEV-8</h1>
+                <img src="assets/images/music minimalist logo.jpeg" alt="ELEV-8">
             </a>
             <nav>
                 <a href="#" class="active">Home</a>
@@ -28,8 +30,8 @@
         </section>
 
         <section id="song-info" class="song-info">
-            <h2 id="song-title">Song Title</h2>
-            <p id="artist">Artist</p>
+            <h2 id="song-title">Bank on it</h2>
+            <p id="artist">Burna Boy</p>
             <div id="song-image">
                 <img id="image" src="assets/images/bank_on_it.jpg" alt="Song Image">
             </div>
@@ -43,13 +45,11 @@
             <form id="add-song-form">
                 <input type="text" id="new-song-title" placeholder="Song Title" required>
                 <input type="text" id="new-song-artist" placeholder="Artist" required>
-                <input type="file" id="new-song-image" accept="image/*" required>
+                <input type="image" id="new-song-image" accept="image/*">
                 <button type="submit" id="add-new-song-button">Add Song</button>
             </form>
         </section>
     </main>
-
-    <script src="js/script.js"></script>
 </body>
 </html>
 

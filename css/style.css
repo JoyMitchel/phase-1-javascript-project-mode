@@ -43,10 +43,22 @@ header {
     font-family: var(--header-font);
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+    
+}
+
 .logo h1 {
     color: #fff;
     font-size: 32px;
     font-family: var(--title-font);
+}
+
+.logo img {
+    width: 40px; 
+    height: auto;
+    border-radius: 5px;
 }
 
 nav a {
