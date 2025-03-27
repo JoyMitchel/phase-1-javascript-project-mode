@@ -31,3 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.querySelectorAll('.play-btn').forEach(button => {
                     button.addEventListener('click', playSong);
                 });
+
+                document.querySelectorAll('.delete-btn').forEach(button => {
+                    button.addEventListener('click', deleteSong);
+                });
+            })
