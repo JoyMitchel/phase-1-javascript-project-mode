@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     songItem.appendChild(songTitle);
 
                     const songImage = document.createElement("img");
-                    songImage.src = `assets/images/${song.image}`;
+                    songImage.src = `images/${song.image}`;
                     songImage.alt = song.title;
                     songItem.appendChild(songImage);
 
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .catch(err => console.error("Error fetching songs: ", err));
     }
 
-    addSongForm.addEventListener("submit", (sub) => {
+  addSongForm.addEventListener("submit", (sub) => {
         
 
         const songTitle = document.getElementById("new-song-title").value;
