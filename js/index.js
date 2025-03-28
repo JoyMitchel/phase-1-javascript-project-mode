@@ -67,6 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function deleteSong(sub) {
         const songId = sub.target.dataset.id;
+
         fetch(`${baseUrl}/${songId}`, {
             method: "DELETE"
         })
@@ -76,6 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     fetchSongs();
 });
+
 
 
 

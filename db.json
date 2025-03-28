@@ -3,7 +3,7 @@
     {
       "id": "1",
       "title": "Bank on it",
-      "artist":"Burna Boy",
+      "artist": "Burna Boy",
       "image": "images/bank_on_it.jpg"
     },
     {
@@ -22,7 +22,7 @@
       "id": "4",
       "title": "Marvin's Room",
       "artist": "Drake",
-      "image": "images/marvin's_room.jpg"
+      "image": "images/marvins_room.jpg"
     }
   ]
 }
