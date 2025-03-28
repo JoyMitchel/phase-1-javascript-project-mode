@@ -1,4 +1,5 @@
 https://phase-1-javascript-project-mode-green.vercel.app/
+https://joymitchel.github.io/phase-1-javascript-project-mode/
 
 
 # Phase 1 Project Guidelines
