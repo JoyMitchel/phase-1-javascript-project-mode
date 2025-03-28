@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const baseUrl = "http://localhost:3000/songs";
+    const baseUrl = "https://phase-1-javascript-project-mode-green.vercel.app/";
     const songListUl = document.getElementById("song-list");
     const addSongForm = document.getElementById("song-form");
 
@@ -36,8 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
             .catch(err => console.error("Error fetching songs: ", err));
     }
 
-    addSongForm.addEventListener("submit", function (e) {
-        e.preventDefault();
+    addSongForm.addEventListener("submit", function (subm) {
+        subm.preventDefault();
 
         const newSong = {
             title: document.getElementById("song-title").value,
@@ -59,8 +59,8 @@ document.addEventListener("DOMContentLoaded", () => {
         addSongForm.reset();
     });
 
-    function deleteSong(e) {
-        const songId = e.target.dataset.id;
+    function deleteSong(subm) {
+        const songId = subm.target.dataset.id;
         fetch(`${baseUrl}/${songId}`, {
             method: "DELETE"
         })
