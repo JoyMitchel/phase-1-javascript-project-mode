@@ -1,14 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
     const baseUrl = "https://phase-1-javascript-project-mode-green.vercel.app/";
     const songListUl = document.getElementById("song-list");
-    const addSongForm = document.getElementById("song-form");
+    const addSongForm = document.getElementById("add-song-form");
 
     function fetchSongs() {
         fetch(baseUrl)
             .then(response => response.json())
-            .then(songs => {
+            .then(data => {
                 songListUl.innerHTML = ''; 
-                songs.forEach(song => {
+
+                data.forEach(song => {
                     const songItem = document.createElement("li");
 
                     const songTitle = document.createElement("h4");
@@ -21,9 +22,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     songItem.appendChild(songImage);
 
                     const deleteButton = document.createElement("button");
+                    deleteButton.classList.add("delete-btn");
                     deleteButton.textContent = "Delete";
                     deleteButton.dataset.id = song.id;
-                    deleteButton.classList.add("delete-btn");
                     songItem.appendChild(deleteButton);
 
                     songListUl.appendChild(songItem);
@@ -36,13 +37,20 @@ document.addEventListener("DOMContentLoaded", () => {
             .catch(err => console.error("Error fetching songs: ", err));
     }
 
-    addSongForm.addEventListener("submit", function (subm) {
-        subm.preventDefault();
+    addSongForm.addEventListener("submit", (sub) => {
+        sub.preventDefault();
+
+        const imageFile = document.getElementById("new-song-image").files[0];
+
+        if (!imageFile) {
+            alert("Please select an image file.");
+            return;
+        }
 
         const newSong = {
-            title: document.getElementById("song-title").value,
-            artist: document.getElementById("song-artist").value,
-            image: document.getElementById("song-image").files[0].name,
+            title: document.getElementById("new-song-title").value,
+            artist: document.getElementById("new-song-artist").value,
+            image: imageFile.name,
         };
 
         fetch(baseUrl, {
@@ -55,12 +63,10 @@ document.addEventListener("DOMContentLoaded", () => {
         .then(response => response.json())
         .then(() => fetchSongs())
         .catch(err => console.error("Error adding song: ", err));
-
-        addSongForm.reset();
     });
 
-    function deleteSong(subm) {
-        const songId = subm.target.dataset.id;
+    function deleteSong(sub) {
+        const songId = sub.target.dataset.id;
         fetch(`${baseUrl}/${songId}`, {
             method: "DELETE"
         })
@@ -68,40 +74,9 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(err => console.error("Error deleting song: ", err));
     }
 
-    function updateSong(songId, updatedSongData) {
-        fetch(`${baseUrl}/${songId}`, {
-            method: "PUT",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(updatedSongData)
-        })
-        .then(response => response.json())
-        .then(() => fetchSongs())
-        .catch(err => console.error("Error updating song: ", err));
-    }
-
-    function addUpdateButton(songItem, song) {
-        const updateButton = document.createElement("button");
-        updateButton.textContent = "Update";
-        updateButton.classList.add("update-btn");
-        updateButton.dataset.id = song.id;
-
-        updateButton.addEventListener("click", function () {
-            const updatedSongData = {
-                title: "Updated " + song.title,
-                artist: song.artist,
-                image: song.image
-            };
-
-            updateSong(song.id, updatedSongData);
-        });
-
-        songItem.appendChild(updateButton);
-    }
-
     fetchSongs();
 });
+
 
 
 
